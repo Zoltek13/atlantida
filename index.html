@@ -3,6 +3,7 @@
 
 <head>
    <meta charset="UTF-8">
+   <meta name="Description" content="Atlantida">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Atlantida</title>
    <link rel="stylesheet" href="css/style.min.css">
@@ -10,65 +11,100 @@
 
 <body>
    <div class="wrapper">
+      <svg style="display: none">
+         <symbol id="prev" viewBox="0 0 512 512">
+            <g>
+               <path d="M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333
+                  c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,469.333,256S373.818,469.333,256,469.333
+                  z" />
+               <path d="M313.752,134.248c-8.331-8.331-21.839-8.331-30.17,0L176.915,240.915c-8.331,8.331-8.331,21.839,0,30.17l106.667,106.667
+                  c8.331,8.331,21.839,8.331,30.17,0c8.331-8.331,8.331-21.839,0-30.17L222.17,256l91.582-91.582
+                  C322.083,156.087,322.083,142.58,313.752,134.248z" />
+            </g>
+         </symbol>
+         <symbol id="next" viewBox="0 0 512 512">
+            <g>
+               <path d="M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333
+                  c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,469.333,256S373.818,469.333,256,469.333
+                  z" />
+               <path d="M228.418,134.248c-8.331-8.331-21.839-8.331-30.17,0c-8.331,8.331-8.331,21.839,0,30.17L289.83,256l-91.582,91.582
+                  c-8.331,8.331-8.331,21.839,0,30.17c8.331,8.331,21.839,8.331,30.17,0l106.667-106.667c8.331-8.331,8.331-21.839,0-30.17
+                  L228.418,134.248z" />
+            </g>
+         </symbol>
+         <symbol id="zoom" viewBox="0 0 522.781 522.782">
+            <g>
+               <path
+                  d="M512.703,455.395l-75.353-75.2c-7.191-7.19-16.983-10.557-26.469-10.098l-36.262-36.261
+                  c61.735-81.625,55.463-198.365-18.896-272.799C274.405-20.282,142.443-20.282,61.124,61.19
+                  c-81.473,81.472-81.473,213.282-0.153,294.601c74.435,74.435,191.174,80.631,272.799,18.896l36.261,36.262
+                  c-0.459,9.485,2.907,19.277,10.098,26.469l75.2,75.199c13.464,13.464,35.419,13.464,48.883,0l8.339-8.339
+                  C526.167,490.814,526.167,469.012,512.703,455.395z M310.666,310.733c-56.457,56.457-148.18,56.61-204.637,0.153
+                  s-56.457-148.027,0.153-204.638c56.457-56.457,148.181-56.61,204.638-0.153S367.047,254.123,310.666,310.733z" />
+               <path d="M265.072,186.727h-34.119v-34.119c0-12.316-9.945-22.262-22.108-22.262h-0.229c-12.164,0-22.108,9.945-22.108,22.262
+                  v34.119h-34.119c-12.316,0-22.261,9.945-22.261,22.109v0.153c0,12.164,9.945,22.108,22.261,22.108h34.119v34.119
+                  c0,12.317,9.945,22.262,22.108,22.262h0.153c12.163,0,22.108-9.944,22.108-22.262v-34.119h34.119
+                  c12.316,0,22.262-9.945,22.262-22.108v-0.153C287.41,196.672,277.466,186.727,265.072,186.727z" />
+            </g>
+         </symbol>
+      </svg>
       <header class="header">
-         <div class="container">
-            <div class="header__body">
-               <div class="burger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+   <div class="container">
+      <div class="header__body">
+         <div class="burger">
+            <span></span>
+         </div>
+         <a href="#intro" class="header__label scroll">
+            <div class="header__logo">
+               <img src="img/icons/headerLogo.png" alt="">
+            </div>
+            <div class="header__title">Atlantida</div>
+         </a>
+         <nav class="nav">
+            <ul class="nav__list" id="main-nav">
+               <li><a href="#intro" class="nav__link scroll">Home</a></li>
+               <li><a href="#about" class="nav__link scroll">About</a></li>
+               <li><a href="#services" class="nav__link scroll">Services</a></li>
+               <li><a href="#history" class="nav__link scroll">History</a></li>
+               <li><a href="#team" class="nav__link scroll">Team</a></li>
+               <li><a href="#portfolio" class="nav__link scroll">Portfolio</a></li>
+               <li><a href="#prices" class="nav__link scroll">Prices</a></li>
+               <li><a href="#blog" class="nav__link scroll">Blog</a></li>
+               <li><a href="#clients" class="nav__link scroll">Clients</a></li>
+               <li><a href="#contact" class="nav__link scroll">Contact</a></li>
+            </ul>
+         </nav>
+         <div class="header__social social-header" data-da="nav__list,last,500">
+            <div class="social-header__body">
+               <div class="social-header__item">
+                  <a href="#" class="_icon-facebook social-icon facebook" aria-label="facebook"></a>
                </div>
-               <a href="#int" class="header__label">
-                  <div class="header__logo">
-                     <picture>
-                        <source srcset="icons/headerLogo.webp" type="image/webp"><img src="icons/headerLogo.png" alt="">
-                     </picture>
-                  </div>
-                  <div class="header__title">Atlantida</div>
-               </a>
-               <nav class="nav">
-                  <ul class="nav__list">
-                     <li><a href="#int" class="nav__link">Home</a></li>
-                     <li><a href="#abt" class="nav__link">About</a></li>
-                     <li><a href="#serv" class="nav__link">Services</a></li>
-                     <li><a href="#hist" class="nav__link">History</a></li>
-                     <li><a href="#tm" class="nav__link">Team</a></li>
-                     <li><a href="#portf" class="nav__link">Portfolio</a></li>
-                     <li><a href="#pric" class="nav__link">Prices</a></li>
-                     <li><a href="#blg" class="nav__link">Blog</a></li>
-                     <li><a href="#clt" class="nav__link">Clients</a></li>
-                     <li><a href="#cnt" class="nav__link">Contact</a></li>
-                  </ul>
-               </nav>
-               <div class="header__social social-header">
-                  <div class="social-header__body">
-                     <div class="social-header__item">
-                        <a href="">
-                           <picture>
-                              <source srcset="icons/Facebook.webp" type="image/webp"><img src="icons/Facebook.png"
-                                 alt=""></picture>
-                        </a>
-                     </div>
-                     <div class="social-header__item">
-                        <a href="">
-                           <picture>
-                              <source srcset="icons/Tweter.webp" type="image/webp"><img src="icons/Tweter.png" alt="">
-                           </picture>
-                        </a>
-                     </div>
-                     <div class="social-header__item">
-                        <a href="">
-                           <picture>
-                              <source srcset="icons/Behance.webp" type="image/webp"><img src="icons/Behance.png" alt="">
-                           </picture>
-                        </a>
-                     </div>
-                  </div>
+               <div class="social-header__item">
+                  <a href="#" class="_icon-twitter social-icon twitter" aria-label="twitter"></a>
+               </div>
+               <div class="social-header__item">
+                  <a href="#" class="_icon-behance social-icon behance" aria-label="behance"></a>
                </div>
             </div>
          </div>
-      </header>
-      <div id="int" class="intro">
+      </div>
+   </div>
+</header>
+      <div id="intro" class="intro section">
+         <div class="intro__bg">
+            <picture>
+               <source media="(min-width: 1000px)" srcset="img/intro_bg4Full.webp" type="image/webp">
+               <source media="(min-width: 500px)" srcset="img/intro_bg4Medium.webp" type="image/webp">
+               <source media="(min-width: 200px)" srcset="img/intro_bg4Small.webp" type="image/webp">
+
+               <source media="(min-width: 1000px)" srcset="img/intro_bg4Full.png" type="image/png">
+               <source media="(min-width: 500px)" srcset="img/intro_bg4Medium.png" type="image/png">
+               <source media="(min-width: 200px)" srcset="img/intro_bg4Small.png" type="image/png">
+
+               <img src="img/intro_bg4Full.png" sizes="100vw (max-width: 1000px) 1000px, (max-width: 500px) 500px"
+                  srcset="img/intro_bg4Full.png, img/intro_bg4Medium.png 1792w, img/intro_bg4Small.png 1280w" alt="">
+            </picture>
+         </div>
          <div class="container">
             <div class="intro__slider mainslider">
                <div class="mainslider__body _swiper">
@@ -81,23 +117,46 @@
                         <div class="intro__top-title">Design Studio and Digital Agency</div>
                         <h1 class="intro__title">WE ARE ATLANTIDA</h1>
                      </div>
+                     <div class="mainslider__slide swiper-slide">
+                        <div class="intro__top-title">Design Studio and Digital Agency</div>
+                        <h1 class="intro__title">WE ARE ATLANTIDA</h1>
+                     </div>
                   </div>
                </div>
                <div class="mainslider__arrows">
-                  <div class="mainslider__arrow intro-arrow_prev _arrow_prev"></div>
-                  <div class="mainslider__arrow intro-arrow_next _arrow_next"></div>
+                  <div class="mainslider__arrow intro-arrow_prev _arrow_prev">
+                     <svg class="slider-arrow">
+                        <use xlink:href="#prev"></use>
+                     </svg>
+                  </div>
+                  <div class="mainslider__arrow intro-arrow_next _arrow_next">
+                     <svg class="slider-arrow">
+                        <use xlink:href="#next"></use>
+                     </svg>
+                  </div>
                </div>
             </div>
             <div class="intro__btn btn-intro">
-               <a class="btn-intro__link" href="#abt">Get Started</a>
+               <a class="btn-intro__link scroll" href="#about">Get Started</a>
                <div class="btn-intro__arrow"></div>
             </div>
          </div>
       </div>
-      <section id="abt" class="about">
+      <section id="about" class="about section">
          <div class="container">
             <div class="about__body">
-               <div class="about__bg"></div>
+               <div class="about__bg">
+                  <picture>
+                     <source media="(min-width: 500px)" srcset="img/about_bg2Full.webp" type="image/webp">
+                     <source media="(min-width: 200px)" srcset="img/about_bg2Small.webp" type="image/webp">
+
+                     <source media="(min-width: 500px)" srcset="img/about_bg2Full.jpg" type="image/jpg">
+                     <source media="(min-width: 200px)" srcset="img/about_bg2Small.jpg" type="image/jpg">
+
+                     <img src="img/about_bg2Full.jpg" sizes="100vw (max-width: 500px) 500px"
+                        srcset="img/intro_bg4Full.png, img/about_bg2Small.jpg 500w" alt="" loading="lazy">
+                  </picture>
+               </div>
                <h2 class="about__title title-section">About us</h2>
                <div class="about__text">
                   <p>
@@ -114,8 +173,8 @@
                </div>
                <div class="about__btn btn-about">
                   <div class="btn-about__body">
-                     <a href="#cnt" class="btn-about__btn">Contact us</a>
-                     <a href="#portf" class="btn-about__btn">Portfolio</a>
+                     <a href="#contact" class="btn-about__btn scroll">Contact us</a>
+                     <a href="#portfolio" class="btn-about__btn scroll">Portfolio</a>
                   </div>
                </div>
             </div>
@@ -124,7 +183,8 @@
                   <div class="items-about__item">
                      <div class="items-about__icon">
                         <picture>
-                           <source srcset="icons/about1.webp" type="image/webp"><img src="icons/about1.png" alt="">
+                           <source srcset="img/icons/about1.webp" type="image/webp">
+                           <img src="img/icons/about1.png" alt="" loading="lazy">
                         </picture>
                      </div>
                      <div class="items-about__title">Awards winner</div>
@@ -133,7 +193,8 @@
                   <div class="items-about__item">
                      <div class="items-about__icon">
                         <picture>
-                           <source srcset="icons/about2.webp" type="image/webp"><img src="icons/about2.png" alt="">
+                           <source srcset="img/icons/about2.webp" type="image/webp">
+                           <img src="img/icons/about2.png" alt="" loading="lazy">
                         </picture>
                      </div>
                      <div class="items-about__title">Jobs done</div>
@@ -142,7 +203,8 @@
                   <div class="items-about__item">
                      <div class="items-about__icon">
                         <picture>
-                           <source srcset="icons/about3.webp" type="image/webp"><img src="icons/about3.png" alt="">
+                           <source srcset="img/icons/about3.webp" type="image/webp">
+                           <img src="img/icons/about3.png" alt="" loading="lazy">
                         </picture>
                      </div>
                      <div class="items-about__title">Happy clients</div>
@@ -151,7 +213,8 @@
                   <div class="items-about__item">
                      <div class="items-about__icon">
                         <picture>
-                           <source srcset="icons/about4.webp" type="image/webp"><img src="icons/about4.png" alt="">
+                           <source srcset="img/icons/about4.webp" type="image/webp">
+                           <img src="img/icons/about4.png" alt="" loading="lazy">
                         </picture>
                      </div>
                      <div class="items-about__title">Reviews recieved</div>
@@ -161,7 +224,19 @@
             </div>
          </div>
       </section>
-      <section id="serv" class="services">
+      <section id="services" class="services section">
+         <div class="services__bg">
+            <picture>
+               <source media="(min-width: 500px)" srcset="img/Services_bg2Full.webp" type="image/webp">
+               <source media="(min-width: 200px)" srcset="img/Services_bg2Small.webp" type="image/webp">
+
+               <source media="(min-width: 500px)" srcset="img/Services_bg2Full.jpg" type="image/jpg">
+               <source media="(min-width: 200px)" srcset="img/Services_bg2Small.jpg" type="image/jpg">
+
+               <img src="img/Services_bg2Full.jpg" sizes="100vw (max-width: 500px) 500px"
+                  srcset="img/Services_bg2Full.jpg, img/Services_bg2Small.jpg 666w" alt="" loading="lazy">
+            </picture>
+         </div>
          <div class="container">
             <div class="services__body">
                <div class="services__header section-header">
@@ -178,8 +253,9 @@
                         <div class="item-services__body">
                            <div class="item-services__icon">
                               <picture>
-                                 <source srcset="icons/services1.webp" type="image/webp"><img src="icons/services1.png"
-                                    alt=""></picture>
+                                 <source srcset="img/icons/services1.webp" type="image/webp">
+                                 <img src="img/icons/services1.png" alt="" loading="lazy">
+                              </picture>
                            </div>
                            <div class="item-services__title">GRAPHIC DESIGN</div>
                            <div class="item-services__text">
@@ -195,8 +271,9 @@
                         <div class="item-services__body">
                            <div class="item-services__icon">
                               <picture>
-                                 <source srcset="icons/services2.webp" type="image/webp"><img src="icons/services2.png"
-                                    alt=""></picture>
+                                 <source srcset="img/icons/services2.webp" type="image/webp">
+                                 <img src="img/icons/services2.png" alt="" loading="lazy">
+                              </picture>
                            </div>
                            <div class="item-services__title">WEBSITE DESIGN</div>
                            <div class="item-services__text">
@@ -213,8 +290,9 @@
                         <div class="item-services__body">
                            <div class="item-services__icon">
                               <picture>
-                                 <source srcset="icons/services3.webp" type="image/webp"><img src="icons/services3.png"
-                                    alt=""></picture>
+                                 <source srcset="img/icons/services3.webp" type="image/webp">
+                                 <img src="img/icons/services3.png" alt="" loading="lazy">
+                              </picture>
                            </div>
                            <div class="item-services__title">SEO & ANALITYCS</div>
                            <div class="item-services__text">
@@ -230,8 +308,9 @@
                         <div class="item-services__body">
                            <div class="item-services__icon">
                               <picture>
-                                 <source srcset="icons/services4.webp" type="image/webp"><img src="icons/services4.png"
-                                    alt=""></picture>
+                                 <source srcset="img/icons/services4.webp" type="image/webp">
+                                 <img src="img/icons/services4.png" alt="" loading="lazy">
+                              </picture>
                            </div>
                            <div class="item-services__title">WORDPRESS PROGRAMING</div>
                            <div class="item-services__text">
@@ -248,7 +327,7 @@
             </div>
          </div>
       </section>
-      <section id="hist" class="history">
+      <section id="history" class="history section">
          <div class="container">
             <div class="history__header section-header">
                <h2 class="history__title title-section">History</h2>
@@ -258,17 +337,47 @@
                   amet.
                </div>
             </div>
-            <div class="history__body">
-               <div class="history__diagram diagram-history">
-                  <div class="diagram-history__column column-left">
-                     <div class="diagram-history__circle-top circle">2015</div>
-                     <div class="diagram-history__item item-history">
-                        <div class="item-history__body item-history__body_left">
-                           <div class="item-history__title">
+            <div class="history__row row-history">
+               <div class="row-history__circle">2015</div>
+               <div class="row-history__column row-history__column_left">
+                  <div class="row-history__item">
+                     <div class="row-history__border">
+                        <div class="row-history__content content-item">
+                           <a href="#" class="content-item__title">
                               Donec id lobortis tellus. Maecenas vel dignissim
+                           </a>
+                           <div class="content-item__date">07 April 2015</div>
+                           <div class="content-item__text">
+                              <p>
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum
+                                 pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum
+                                 congue
+                                 egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti
+                                 sociosqu
+                                 ad litora torquent per conubia nostra, per inceptos himenaeos.
+                              </p>
+                              <p>
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum
+                                 pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum
+                                 congue
+                                 egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti
+                                 sociosqu
+                                 ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                 Curabitur fringilla tortor non aliquam congue.
+                              </p>
                            </div>
-                           <div class="item-history__date">07 October 2015</div>
-                           <div class="item-history__text">
+                           <div class="content-item__triangle"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row-history__item" data-da="row-history__column_right,last,767.98">
+                     <div class="row-history__border">
+                        <div class="row-history__content content-item">
+                           <a href="#" class="content-item__title">
+                              Donec quis faucibus lorem
+                           </a>
+                           <div class="content-item__date">07 October 2015</div>
+                           <div class="content-item__text">
                               <p>
                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum
                                  pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum
@@ -278,116 +387,144 @@
                                  ad litora torquent per conubia nostra, per inceptos himenaeos.
                               </p>
                            </div>
-                           <div class="item-history__triangle item-history__triangle_left"></div>
-                        </div>
-                     </div>
-                     <div class="diagram-history__item item-history">
-                        <div class="item-history__body item-history__body_left">
-                           <div class="item-history__title">
-                              Donec quis faucibus lorem
-                           </div>
-                           <div class="item-history__date">07 May 2015</div>
-                           <div class="item-history__text">
-                              <p>
-                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum
-                                 pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum
-                                 congue
-                                 egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti
-                                 sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                              </p>
-                           </div>
-                           <div class="item-history__triangle item-history__triangle_left"></div>
-                        </div>
-                     </div>
-                     <div class="item-history__space"></div>
-                     <div class="diagram-history__circle-center circle">2014</div>
-                     <div class="diagram-history__item item-history">
-                        <div class="item-history__body item-history__body_left">
-                           <div class="item-history__title">
-                              Donec id lobortis tellus. Maecenas vel dignissim
-                           </div>
-                           <div class="item-history__date">07 October 2014</div>
-                           <div class="item-history__text">
-                              <p>
-                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum
-                                 pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum
-                                 congue
-                                 egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti
-                                 sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                              </p>
-                           </div>
-                           <div class="item-history__triangle item-history__triangle_left"></div>
+                           <div class="content-item__triangle"></div>
                         </div>
                      </div>
                   </div>
-                  <div class="diagram-history__column column-right">
-                     <div data-da="column-left,2,767.98" class="diagram-history__item item-history">
-                        <div class="item-history__body item-history__body_right">
-                           <div class="item-history__title">
+               </div>
+               <div class="row-history__column row-history__column_right">
+                  <div class="row-history__item">
+                     <div class="row-history__border">
+                        <div class="row-history__content content-item">
+                           <a href="#" class="content-item__title">
                               Nam tincidunt, lacus sit amet ultrices
-                           </div>
-                           <div class="item-history__date">05 June 2015</div>
-                           <div class="item-history__text">
-                              <p>
-                                 In pulvinar, mi at rhoncus condimentum, turpis nisl scelerisque turpis, ut
-                                 gravida eros tortor non arcu. In eget arcu ante. Curabitur lacinia ultricies
-                                 ante, eget mattis orci vestibulum sit amet. Donec quis faucibus lorem.
-                              </p>
-                           </div>
-                           <div class="item-history__triangle item-history__triangle_right"></div>
-                        </div>
-                     </div>
-                     <div data-da="column-left,3,767.98" class="diagram-history__item item-history">
-                        <div class="item-history__body item-history__body_right">
-                           <div class="item-history__title">
-                              Nunc efficitur laoreet turpis sed auctor.
-                           </div>
-                           <div class="item-history__date">02 April 2015</div>
-                           <div class="item-history__text">
+                           </a>
+                           <div class="content-item__date">05 May 2015</div>
+                           <div class="content-item__text">
                               <p>
                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum
                                  pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum
                                  congue
                                  egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti
-                                 sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                              </p>
-                              <p>
-                                 Praesent id augue in risus molestie euismod molestie id augue. Suspendisse a
-                                 libero porttitor, lobortis eros ac, varius velit. Praesent sed eros at elit
-                                 suscipit laoreet vitae condimentum risus.
+                                 sociosqu
+                                 ad litora torquent per conubia nostra, per inceptos himenaeos.
                               </p>
                            </div>
-                           <div class="item-history__triangle item-history__triangle_right"></div>
+                           <div class="content-item__triangle"></div>
                         </div>
                      </div>
-                     <div class="item-history__right-space"></div>
-                     <div class="diagram-history__item item-history">
-                        <div class="item-history__body item-history__body_right">
-                           <div class="item-history__title">
-                              Nam tincidunt, lacus sit amet ultrices
-                           </div>
-                           <div class="item-history__date">05 June 2014</div>
-                           <div class="item-history__text">
+                  </div>
+                  <div class="row-history__item">
+                     <div class="row-history__border">
+                        <div class="row-history__content content-item">
+                           <a href="#" class="content-item__title">
+                              Nunc efficitur laoreet turpis sed auctor.
+                           </a>
+                           <div class="content-item__date">02 June 2015</div>
+                           <div class="content-item__text">
                               <p>
-                                 In pulvinar, mi at rhoncus condimentum, turpis nisl scelerisque turpis, ut
-                                 gravida eros tortor non arcu. In eget arcu ante. Curabitur lacinia ultricies
-                                 ante, eget mattis orci vestibulum sit amet. Donec quis faucibus lorem.
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum
+                                 pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum
+                                 congue
+                                 egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti
+                                 sociosqu
+                                 ad litora torquent per conubia nostra, per inceptos himenaeos.
+                              </p>
+                              <p>
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum
+                                 pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum
+                                 congue
+                                 egestas.
+                              </p>
+                              <p>
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum
+                                 pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum
+                                 congue
+                                 egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti
+                                 sociosqu
+                                 ad litora torquent per conubia nostra, per inceptos himenaeos.
                               </p>
                            </div>
-                           <div class="item-history__triangle item-history__triangle_right"></div>
+                           <div class="content-item__triangle"></div>
                         </div>
-                     </div>
-                     <div class="diagram-history__circle-bottom circle">
-                        <picture>
-                           <source srcset="icons/history.webp" type="image/webp"><img src="icons/history.png" alt="">
-                        </picture>
                      </div>
                   </div>
                </div>
             </div>
+            <div class="history__row row-history">
+               <div class="row-history__circle">2014</div>
+               <div class="row-history__column row-history__column_left">
+                  <div class="row-history__item">
+                     <div class="row-history__border">
+                        <div class="row-history__content content-item">
+                           <a href="#" class="content-item__title">
+                              Nam tincidunt, lacus sit amet ultrices
+                           </a>
+                           <div class="content-item__date">05 June 2014</div>
+                           <div class="content-item__text">
+                              <p>
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum
+                                 pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum
+                                 congue
+                                 egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum
+                                 pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum
+                                 congue
+                                 egestas.
+                              </p>
+                           </div>
+                           <div class="content-item__triangle"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row-history__column row-history__column_right">
+                  <div class="row-history__item">
+                     <div class="row-history__border">
+                        <div class="row-history__content content-item">
+                           <a href="#" class="content-item__title">
+                              Donec id lobortis tellus. Maecenas vel dignissim
+                           </a>
+                           <div class="content-item__date">07 October 2014</div>
+                           <div class="content-item__text">
+                              <p>
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum
+                                 pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum
+                                 congue
+                                 egestas.
+                              </p>
+                              <p>
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum
+                                 pulvinar, consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum
+                                 congue
+                                 egestas. Curabitur fringilla tortor non aliquam congue. Class aptent taciti
+                                 sociosqu
+                                 ad litora torquent per conubia nostra, per inceptos himenaeos.
+                              </p>
+                           </div>
+                           <div class="content-item__triangle"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row-history__circle row-history__circle_bottom">
+                  <img src="img/icons/history.png" alt="" loading="lazy">
+               </div>
+            </div>
          </div>
       </section>
-      <section id="tm" class="team">
+      <section id="team" class="team section">
+         <div class="team__bg">
+            <picture>
+               <source media="(min-width: 500px)" srcset="img/team_bgFull.webp" type="image/webp">
+               <source media="(min-width: 200px)" srcset="img/team_bgSmall.webp" type="image/webp">
+
+               <source media="(min-width: 500px)" srcset="img/team_bgFull.jpg" type="image/jpg">
+               <source media="(min-width: 200px)" srcset="img/team_bgSmall.jpg" type="image/jpg">
+
+               <img src="img/team_bgFull.jpg" sizes="100vw (max-width: 500px) 500px"
+                  srcset="img/team_bgFull.jpg, img/team_bgSmall.jpg 1200w" alt="" loading="lazy">
+            </picture>
+         </div>
          <div class="container2">
             <div class="team__header section-header">
                <h2 class="team__title title-section">OUR TEAM</h2>
@@ -401,34 +538,24 @@
                <div class="team__item item-team">
                   <div class="item-team__img">
                      <picture>
-                        <source srcset="img/team1_1.webp" type="image/webp"><img src="img/team1_1.jpg" alt=""></picture>
+                        <source srcset="img/team1_1.webp" type="image/webp">
+                        <img src="img/team1_1.jpg" alt="" loading="lazy">
+                     </picture>
                   </div>
                   <div class="item-team__hover hover-item">
                      <div class="hover-item__body">
-                        <div class="hover-item__name"><a href="">Jim Smith</a></div>
+                        <div class="hover-item__name"><a href="#" aria-label="Jim Smith">Jim Smith</a></div>
                         <div class="hover-item__prof">Designer</div>
                         <div class="hover-item__social social-team">
                            <div class="social-team__body">
                               <div class="social-team__item">
-                                 <a href="">
-                                    <picture>
-                                       <source srcset="icons/team_Facebook.webp" type="image/webp"><img
-                                          src="icons/team_Facebook.png" alt=""></picture>
-                                 </a>
+                                 <a href="#" class="_icon-facebook social-icon facebook" aria-label="facebook"></a>
                               </div>
                               <div class="social-team__item">
-                                 <a href="">
-                                    <picture>
-                                       <source srcset="icons/team_Tweter.webp" type="image/webp"><img
-                                          src="icons/team_Tweter.png" alt=""></picture>
-                                 </a>
+                                 <a href="#" class="_icon-twitter social-icon twitter" aria-label="twitter"></a>
                               </div>
                               <div class="social-team__item">
-                                 <a href="">
-                                    <picture>
-                                       <source srcset="icons/team_Behance.webp" type="image/webp"><img
-                                          src="icons/team_Behance.png" alt=""></picture>
-                                 </a>
+                                 <a href="#" class="_icon-behance social-icon behance" aria-label="behance"></a>
                               </div>
                            </div>
                         </div>
@@ -438,34 +565,24 @@
                <div class="team__item item-team">
                   <div class="item-team__img">
                      <picture>
-                        <source srcset="img/team2_2.webp" type="image/webp"><img src="img/team2_2.jpg" alt=""></picture>
+                        <source srcset="img/team2_2.webp" type="image/webp">
+                        <img src="img/team2_2.jpg" alt="" loading="lazy">
+                     </picture>
                   </div>
                   <div class="item-team__hover hover-item">
                      <div class="hover-item__body">
-                        <div class="hover-item__name"><a href="">Jilia Smith</a></div>
+                        <div class="hover-item__name"><a aria-label="Jilia Smith" href="#">Jilia Smith</a></div>
                         <div class="hover-item__prof">Designer</div>
                         <div class="hover-item__social social-team">
                            <div class="social-team__body">
                               <div class="social-team__item">
-                                 <a href="">
-                                    <picture>
-                                       <source srcset="icons/team_Facebook.webp" type="image/webp"><img
-                                          src="icons/team_Facebook.png" alt=""></picture>
-                                 </a>
+                                 <a href="#" class="_icon-facebook social-icon facebook" aria-label="facebook"></a>
                               </div>
                               <div class="social-team__item">
-                                 <a href="">
-                                    <picture>
-                                       <source srcset="icons/team_Tweter.webp" type="image/webp"><img
-                                          src="icons/team_Tweter.png" alt=""></picture>
-                                 </a>
+                                 <a href="#" class="_icon-twitter social-icon twitter" aria-label="twitter"></a>
                               </div>
                               <div class="social-team__item">
-                                 <a href="">
-                                    <picture>
-                                       <source srcset="icons/team_Behance.webp" type="image/webp"><img
-                                          src="icons/team_Behance.png" alt=""></picture>
-                                 </a>
+                                 <a href="#" class="_icon-behance social-icon behance" aria-label="behance"></a>
                               </div>
                            </div>
                         </div>
@@ -475,34 +592,24 @@
                <div class="team__item item-team">
                   <div class="item-team__img">
                      <picture>
-                        <source srcset="img/team3_3.webp" type="image/webp"><img src="img/team3_3.jpg" alt=""></picture>
+                        <source srcset="img/team3_3Small.webp" type="image/webp">
+                        <img src="img/team3_3Small.jpg" alt="" loading="lazy">
+                     </picture>
                   </div>
                   <div class="item-team__hover hover-item">
                      <div class="hover-item__body">
-                        <div class="hover-item__name"><a href="">Jilia Smith</a></div>
+                        <div class="hover-item__name"><a aria-label="Jilia Smith" href="#">Jilia Smith</a></div>
                         <div class="hover-item__prof">Designer</div>
                         <div class="hover-item__social social-team">
                            <div class="social-team__body">
                               <div class="social-team__item">
-                                 <a href="">
-                                    <picture>
-                                       <source srcset="icons/team_Facebook.webp" type="image/webp"><img
-                                          src="icons/team_Facebook.png" alt=""></picture>
-                                 </a>
+                                 <a href="#" class="_icon-facebook social-icon facebook" aria-label="facebook"></a>
                               </div>
                               <div class="social-team__item">
-                                 <a href="">
-                                    <picture>
-                                       <source srcset="icons/team_Tweter.webp" type="image/webp"><img
-                                          src="icons/team_Tweter.png" alt=""></picture>
-                                 </a>
+                                 <a href="#" class="_icon-twitter social-icon twitter" aria-label="twitter"></a>
                               </div>
                               <div class="social-team__item">
-                                 <a href="">
-                                    <picture>
-                                       <source srcset="icons/team_Behance.webp" type="image/webp"><img
-                                          src="icons/team_Behance.png" alt=""></picture>
-                                 </a>
+                                 <a href="#" class="_icon-behance social-icon behance" aria-label="behance"></a>
                               </div>
                            </div>
                         </div>
@@ -512,7 +619,7 @@
             </div>
          </div>
       </section>
-      <section id="portf" class="portfolio">
+      <section id="portfolio" class="portfolio section">
          <div class="portfolio__top">
             <div class="container2">
                <div class="portfolio__header section-header">
@@ -542,61 +649,172 @@
          </div>
          <div class="portfolio__absolute">
             <div class="portfolio__images images-portfolio images-portfolio_1 active">
-               <div class="images-portfolio__body">
+               <div class="images-portfolio__body" id="all">
                   <div class="images-portfolio__column images-portfolio__column_1">
-                     <div class="images-portfolio__img"></div>
-                     <div class="images-portfolio__img"></div>
+                     <div data-src="img/portfolio1_1.jpg" class="images-portfolio__img">
+                        <picture>
+                           <img src="img/portfolio1_1.jpg" alt="" loading="lazy">
+                        </picture>
+                        <svg class="images-portfolio__icon">
+                           <use xlink:href="#zoom"></use>
+                        </svg>
+                     </div>
+                     <div data-src="img/portfolio2_1.jpg" class="images-portfolio__img">
+                        <picture>
+                           <img src="img/portfolio2_1.jpg" alt="" loading="lazy">
+                        </picture>
+                        <svg class="images-portfolio__icon">
+                           <use xlink:href="#zoom"></use>
+                        </svg>
+                     </div>
                   </div>
                   <div class="images-portfolio__column images-portfolio__column_2">
-                     <div class="images-portfolio__img"></div>
-                     <div class="images-portfolio__img"></div>
+                     <div data-src="img/portfolio3_1.jpg" class="images-portfolio__img">
+                        <picture>
+                           <img src="img/portfolio3_1.jpg" alt="" loading="lazy">
+                        </picture>
+                        <svg class="images-portfolio__icon">
+                           <use xlink:href="#zoom"></use>
+                        </svg>
+                     </div>
+                     <div data-src="img/portfolio4_1.jpg" class="images-portfolio__img">
+                        <picture>
+                           <img src="img/portfolio4_1.jpg" alt="" loading="lazy">
+                        </picture>
+                        <svg class="images-portfolio__icon">
+                           <use xlink:href="#zoom"></use>
+                        </svg>
+                     </div>
                   </div>
                   <div class="images-portfolio__column images-portfolio__column_3">
-                     <div class="images-portfolio__img"></div>
-                     <div class="images-portfolio__img"></div>
+                     <div data-src="img/portfolio5_1.jpg" class="images-portfolio__img">
+                        <picture>
+                           <img src="img/portfolio5_1.jpg" alt="" loading="lazy">
+                        </picture>
+                        <svg class="images-portfolio__icon">
+                           <use xlink:href="#zoom"></use>
+                        </svg>
+                     </div>
+                     <div data-src="img/portfolio6_1.jpg" class="images-portfolio__img">
+                        <picture>
+                           <img src="img/portfolio6_1.jpg" alt="" loading="lazy">
+                        </picture>
+                        <svg class="images-portfolio__icon">
+                           <use xlink:href="#zoom"></use>
+                        </svg>
+                     </div>
                   </div>
                   <div class="images-portfolio__column images-portfolio__column_4">
-                     <div class="images-portfolio__img"></div>
-                     <div class="images-portfolio__img"></div>
+                     <div data-src="img/portfolio7_1.jpg" class="images-portfolio__img">
+                        <picture>
+                           <img src="img/portfolio7_1.jpg" alt="" loading="lazy">
+                        </picture>
+                        <svg class="images-portfolio__icon">
+                           <use xlink:href="#zoom"></use>
+                        </svg>
+                     </div>
+                     <div data-src="img/portfolio8_1.jpg" class="images-portfolio__img">
+                        <picture>
+                           <img src="img/portfolio8_1.jpg" alt="" loading="lazy">
+                        </picture>
+                        <svg class="images-portfolio__icon">
+                           <use xlink:href="#zoom"></use>
+                        </svg>
+                     </div>
                   </div>
                </div>
             </div>
-
             <div class="portfolio__images images-portfolio images-portfolio_2">
-               <div class="images-portfolio__body">
+               <div class="images-portfolio__body" id="website">
                   <div class="images-portfolio__column images-portfolio__column_1">
-                     <div class="images-portfolio__img"></div>
+                     <div data-src="img/portfolio1_1.jpg" class="images-portfolio__img">
+                        <picture>
+                           <img src="img/portfolio1_1.jpg" alt="" loading="lazy">
+                        </picture>
+                        <svg class="images-portfolio__icon">
+                           <use xlink:href="#zoom"></use>
+                        </svg>
+                     </div>
                   </div>
                   <div class="images-portfolio__column images-portfolio__column_2">
-                     <div class="images-portfolio__img"></div>
-                     <div class="images-portfolio__img"></div>
+                     <div data-src="img/portfolio3_1.jpg" class="images-portfolio__img">
+                        <picture>
+                           <img src="img/portfolio3_1.jpg" alt="" loading="lazy">
+                        </picture>
+                        <svg class="images-portfolio__icon">
+                           <use xlink:href="#zoom"></use>
+                        </svg>
+                     </div>
+                     <div data-src="img/portfolio4_1.jpg" class="images-portfolio__img">
+                        <picture>
+                           <img src="img/portfolio4_1.jpg" alt="" loading="lazy">
+                        </picture>
+                        <svg class="images-portfolio__icon">
+                           <use xlink:href="#zoom"></use>
+                        </svg>
+                     </div>
                   </div>
                </div>
             </div>
             <div class="portfolio__images images-portfolio images-portfolio_3">
-               <div class="images-portfolio__body">
+               <div class="images-portfolio__body" id="brochures">
                   <div class="images-portfolio__column images-portfolio__column_1">
-                     <div class="images-portfolio__img"></div>
-                     <div class="images-portfolio__img"></div>
+                     <div data-src="img/portfolio7_1.jpg" class="images-portfolio__img">
+                        <picture>
+                           <img src="img/portfolio7_1.jpg" alt="" loading="lazy">
+                        </picture>
+                        <svg class="images-portfolio__icon">
+                           <use xlink:href="#zoom"></use>
+                        </svg>
+                     </div>
+                     <div data-src="img/portfolio5_1.jpg" class="images-portfolio__img">
+                        <picture>
+                           <img src="img/portfolio5_1.jpg" alt="" loading="lazy">
+                        </picture>
+                        <svg class="images-portfolio__icon">
+                           <use xlink:href="#zoom"></use>
+                        </svg>
+                     </div>
                   </div>
                   <div class="images-portfolio__column images-portfolio__column_2">
-                     <div class="images-portfolio__img"></div>
+                     <div data-src="img/portfolio6_1.jpg" class="images-portfolio__img">
+                        <picture>
+                           <img src="img/portfolio6_1.jpg" alt="" loading="lazy">
+                        </picture>
+                        <svg class="images-portfolio__icon">
+                           <use xlink:href="#zoom"></use>
+                        </svg>
+                     </div>
                   </div>
                </div>
             </div>
             <div class="portfolio__images images-portfolio images-portfolio_4">
-               <div class="images-portfolio__body">
+               <div class="images-portfolio__body" id="logos">
                   <div class="images-portfolio__column images-portfolio__column_1">
-                     <div class="images-portfolio__img"></div>
+                     <div data-src="img/portfolio2_1.jpg" class="images-portfolio__img">
+                        <picture>
+                           <img src="img/portfolio2_1.jpg" alt="" loading="lazy">
+                        </picture>
+                        <svg class="images-portfolio__icon">
+                           <use xlink:href="#zoom"></use>
+                        </svg>
+                     </div>
                   </div>
                   <div class="images-portfolio__column images-portfolio__column_2">
-                     <div class="images-portfolio__img"></div>
+                     <div data-src="img/portfolio8_1.jpg" class="images-portfolio__img">
+                        <picture>
+                           <img src="img/portfolio8_1.jpg" alt="" loading="lazy">
+                        </picture>
+                        <svg class="images-portfolio__icon">
+                           <use xlink:href="#zoom"></use>
+                        </svg>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
       </section>
-      <section id="pric" class="prices">
+      <section id="prices" class="prices section">
          <div class="container">
             <div class="prices__header section-header">
                <h2 class="prices__title title-section">Prices</h2>
@@ -612,9 +830,7 @@
                      <div class="item-prices__body">
                         <div class="item-prices__title">Basic</div>
                         <div class="item-prices__icon">
-                           <picture>
-                              <source srcset="icons/price1.webp" type="image/webp"><img src="icons/price1.png" alt="">
-                           </picture>
+                           <img src="img/icons/price1.png" alt="" loading="lazy">
                         </div>
                         <div class="item-prices__price"><span>$</span>10</div>
                         <div class="item-prices__text">
@@ -625,7 +841,7 @@
                            <p>Several Prices</p>
                         </div>
                         <div class="item-prices__btn">
-                           <a href="">Sing up</a>
+                           <a href="#">Sing up</a>
                         </div>
                      </div>
                   </div>
@@ -633,9 +849,7 @@
                      <div class="item-prices__body">
                         <div class="item-prices__title">Advanced</div>
                         <div class="item-prices__icon">
-                           <picture>
-                              <source srcset="icons/price2.webp" type="image/webp"><img src="icons/price2.png" alt="">
-                           </picture>
+                           <img src="img/icons/price2.png" alt="" loading="lazy">
                         </div>
                         <div class="item-prices__price"><span>$</span>20</div>
                         <div class="item-prices__text">
@@ -646,7 +860,7 @@
                            <p>Several Prices</p>
                         </div>
                         <div class="item-prices__btn">
-                           <a href="">Sing up</a>
+                           <a href="#">Sing up</a>
                         </div>
                      </div>
                   </div>
@@ -654,9 +868,7 @@
                      <div class="item-prices__body">
                         <div class="item-prices__title">Pro</div>
                         <div class="item-prices__icon">
-                           <picture>
-                              <source srcset="icons/price3.webp" type="image/webp"><img src="icons/price3.png" alt="">
-                           </picture>
+                           <img src="img/icons/price3.png" alt="" loading="lazy">
                         </div>
                         <div class="item-prices__price"><span>$</span>30</div>
                         <div class="item-prices__text">
@@ -667,7 +879,7 @@
                            <p>Several Prices</p>
                         </div>
                         <div class="item-prices__btn">
-                           <a href="">Sing up</a>
+                           <a href="#">Sing up</a>
                         </div>
                      </div>
                   </div>
@@ -679,9 +891,7 @@
                <div class="footer-prices__body">
                   <div class="footer-prices__column">
                      <div class="footer-prices__icon">
-                        <picture>
-                           <source srcset="icons/price_footer_icon.webp" type="image/webp"><img
-                              src="icons/price_footer_icon.png" alt=""></picture>
+                        <img src="img/icons/price_footer_icon.png" alt="" loading="lazy">
                      </div>
                   </div>
                   <div class="footer-prices__column">
@@ -697,14 +907,14 @@
                   </div>
                   <div class="footer-prices__column">
                      <div class="footer-prices__btn">
-                        <a href="">Purchase</a>
+                        <a href="#">Purchase</a>
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </section>
-      <section id="blg" class="blog">
+      <section id="blog" class="blog section">
          <div class="container2">
             <div class="blog__header section-header">
                <h2 class="blog__title title-section">Blog</h2>
@@ -718,12 +928,16 @@
          <div class="blog__body">
             <div class="blog__row">
                <div class="blog__items item-blog item-blog_1">
-                  <div class="item-blog__img item-blog__img_1"></div>
+                  <div class="item-blog__img item-blog__img_1">
+                     <picture>
+                        <img src="img/blog1_1.png" alt="" loading="lazy">
+                     </picture>
+                  </div>
                   <div class="item-blog__description">
                      <div class="item-blog__toptitle">14 Aug 2015 / By Admin</div>
-                     <div class="item-blog__title">
+                     <a href="#" class="item-blog__title">
                         Donec id lobortis tellus Maecenas.
-                     </div>
+                     </a>
                      <div class="item-blog__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
                         consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur
@@ -735,12 +949,16 @@
                   </div>
                </div>
                <div class="blog__items item-blog item-blog_2">
-                  <div class="item-blog__img item-blog__img_2"></div>
+                  <div class="item-blog__img item-blog__img_2">
+                     <picture>
+                        <img src="img/blog2_2.png" alt="" loading="lazy">
+                     </picture>
+                  </div>
                   <div class="item-blog__description item-blog__description_bg">
                      <div class="item-blog__toptitle">14 Aug 2015 / By Admin</div>
-                     <div class="item-blog__title">
+                     <a href="#" class="item-blog__title">
                         Donec id lobortis tellus Maecenas.
-                     </div>
+                     </a>
                      <div class="item-blog__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
                         consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur
@@ -756,9 +974,9 @@
                <div class="blog__items item-blog item-blog_3">
                   <div class="item-blog__description item-blog__description_bg">
                      <div class="item-blog__toptitle">14 Aug 2015 / By Admin</div>
-                     <div class="item-blog__title">
+                     <a href="#" class="item-blog__title">
                         Donec id lobortis tellus Maecenas.
-                     </div>
+                     </a>
                      <div class="item-blog__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
                         consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur
@@ -768,14 +986,18 @@
                         himenaeos.
                      </div>
                   </div>
-                  <div class="item-blog__img item-blog__img_3"></div>
+                  <div class="item-blog__img item-blog__img_3">
+                     <picture>
+                        <img src="img/blog3_3.png" alt="" loading="lazy">
+                     </picture>
+                  </div>
                </div>
                <div class="blog__items item-blog item-blog_4">
                   <div class="item-blog__description">
                      <div class="item-blog__toptitle">14 Aug 2015 / By Admin</div>
-                     <div class="item-blog__title">
+                     <a href="#" class="item-blog__title">
                         Donec id lobortis tellus Maecenas.
-                     </div>
+                     </a>
                      <div class="item-blog__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ipsum pulvinar,
                         consequat ipsum non, sodales augue. Donec dapibus ipsum rutrum congue egestas. Curabitur
@@ -785,12 +1007,16 @@
                         himenaeos.
                      </div>
                   </div>
-                  <div class="item-blog__img item-blog__img_4"></div>
+                  <div class="item-blog__img item-blog__img_4">
+                     <picture>
+                        <img src="img/blog4_4.png" alt="" loading="lazy">
+                     </picture>
+                  </div>
                </div>
             </div>
          </div>
       </section>
-      <section class="clients" id="clt">
+      <section id="clients" class="clients section">
          <div class="container3">
             <div class="clients__header section-header">
                <h2 class="clients__title title-section">Clients</h2>
@@ -800,106 +1026,134 @@
                   vehicula, ipsum lacus bibendum dolor, sit amet pretium odio magna eget risus.
                </div>
             </div>
-            <div class="clients__brands">
-               <div class="clients__logo">
-                  <div class="clients__img">
-                     <picture>
-                        <source srcset="icons/brand1.webp" type="image/webp"><img src="icons/brand1.png" alt="">
-                     </picture>
+            <div class="clients__brands swiper-container">
+               <div class="clients__slider swiper-wrapper">
+                  <div class="clients__logo swiper-slide">
+                     <div class="clients__img">
+                        <picture>
+                           <source srcset="img/icons/brand1.webp" type="image/webp">
+                           <img src="img/icons/brand1.png" alt="" loading="lazy">
+                        </picture>
+                     </div>
                   </div>
-               </div>
-               <div class="clients__logo">
-                  <div class="clients__img">
-                     <picture>
-                        <source srcset="icons/brand2.webp" type="image/webp"><img src="icons/brand2.png" alt="">
-                     </picture>
+                  <div class="clients__logo swiper-slide">
+                     <div class="clients__img">
+                        <picture>
+                           <source srcset="img/icons/brand2.webp" type="image/webp">
+                           <img src="img/icons/brand2.png" alt="" loading="lazy">
+                        </picture>
+                     </div>
                   </div>
-               </div>
-               <div class="clients__logo">
-                  <div class="clients__img">
-                     <picture>
-                        <source srcset="icons/brand3.webp" type="image/webp"><img src="icons/brand3.png" alt="">
-                     </picture>
+                  <div class="clients__logo swiper-slide">
+                     <div class="clients__img">
+                        <picture>
+                           <source srcset="img/icons/brand3.webp" type="image/webp">
+                           <img src="img/icons/brand3.png" alt="" loading="lazy">
+                        </picture>
+                     </div>
                   </div>
-               </div>
-               <div class="clients__logo">
-                  <div class="clients__img">
-                     <picture>
-                        <source srcset="icons/brand4.webp" type="image/webp"><img src="icons/brand4.png" alt="">
-                     </picture>
+                  <div class="clients__logo swiper-slide">
+                     <div class="clients__img">
+                        <picture>
+                           <source srcset="img/icons/brand4.webp" type="image/webp">
+                           <img src="img/icons/brand4.png" alt="" loading="lazy">
+                        </picture>
+                     </div>
                   </div>
-               </div>
-               <div class="clients__logo">
-                  <div class="clients__img">
-                     <picture>
-                        <source srcset="icons/brand5.webp" type="image/webp"><img src="icons/brand5.png" alt="">
-                     </picture>
+                  <div class="clients__logo swiper-slide">
+                     <div class="clients__img">
+                        <picture>
+                           <source srcset="img/icons/brand5.webp" type="image/webp">
+                           <img src="img/icons/brand5.png" alt="" loading="lazy">
+                        </picture>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
          <div class="clients__reviews reviews-clients">
-            <div class="reviews-clients__body">
-               <div class="reviews-clients__item">
-                  <div class="reviews-clients__icon">
-                     <picture>
-                        <source srcset="img/team1_1.webp" type="image/webp"><img src="img/team1_1.jpg" alt=""></picture>
-                  </div>
-                  <div class="reviews-clients__text">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales
-                     finibus sed in dolor.
-                     Etiam iaculis, nibh a lobortis egestas, est urna sodales.
-                  </div>
-                  <div class="reviews-clients__name">ALEXANDR PODVALNY</div>
-                  <div class="reviews-clients__prof">Free-PSD-Template.com Company</div>
-               </div>
-               <div class="reviews-clients__item">
-                  <div class="reviews-clients__icon">
-                     <picture>
-                        <source srcset="img/team2_2.webp" type="image/webp"><img src="img/team2_2.jpg" alt=""></picture>
-                  </div>
-                  <div class="reviews-clients__text">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales
-                     finibus sed in dolor.
-                     Etiam iaculis, nibh a lobortis egestas, est urna sodales. Lorem ipsum dolor sit amet,
-                     consectetur adipiscing elit. Curabitur eu libero ut erat sodales
-                     finibus sed in dolor.
+            <div class="reviews-clients__bg">
+               <picture>
+                  <source media="(min-width: 1000px)" srcset="img/clients_bg_1Full.webp" type="image/webp">
+                  <source media="(min-width: 500px)" srcset="img/clients_bg_1Medium.webp" type="image/webp">
+                  <source media="(min-width: 200px)" srcset="img/clients_bg_1Small.webp" type="image/webp">
 
+                  <source media="(min-width: 1000px)" srcset="img/clients_bg_1Full.jpg" type="image/jpg">
+                  <source media="(min-width: 500px)" srcset="img/clients_bg_1Medium.jpg" type="image/jpg">
+                  <source media="(min-width: 200px)" srcset="img/clients_bg_1Small.jpg" type="image/jpg">
+
+                  <img src="img/clients_bg_1Full.jpg" sizes="100vw (max-width: 1000px) 1000px, (max-width: 500px) 500px"
+                     srcset="img/clients_bg_1Full.jpg, img/clients_bg_1Medium.jpg 1433w, img/clients_bg_1Small.jpg 1024w"
+                     alt="" loading="lazy">
+               </picture>
+            </div>
+            <div class="reviews-clients__slider">
+               <div class="reviews-clients__body swiper-wrapper">
+                  <div class="reviews-clients__item swiper-slide">
+                     <div class="reviews-clients__icon">
+                        <img src="img/team1_1.jpg" alt="" loading="lazy">
+                     </div>
+                     <div class="reviews-clients__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales
+                        finibus sed in dolor.
+                        Etiam iaculis, nibh a lobortis egestas, est urna sodales.
+                     </div>
+                     <div class="reviews-clients__name">ALEXANDR PODVALNY</div>
+                     <div class="reviews-clients__prof">Free-PSD-Template.com Company</div>
                   </div>
-                  <div class="reviews-clients__name">ALEXANDR PODVALNY</div>
-                  <div class="reviews-clients__prof">Free-PSD-Template.com Company</div>
+                  <div class="reviews-clients__item swiper-slide">
+                     <div class="reviews-clients__icon">
+                        <img src="img/team2_2.jpg" alt="" loading="lazy">
+                     </div>
+                     <div class="reviews-clients__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales
+                        finibus sed in dolor.
+                        Etiam iaculis, nibh a lobortis egestas, est urna sodales. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Curabitur eu libero ut erat sodales
+                        finibus sed in dolor.
+                     </div>
+                     <div class="reviews-clients__name">ALEXANDR PODVALNY</div>
+                     <div class="reviews-clients__prof">Free-PSD-Template.com Company</div>
+                  </div>
+                  <div class="reviews-clients__item swiper-slide">
+                     <div class="reviews-clients__icon">
+                        <img src="img/team3_3Small.jpg" alt="" loading="lazy">
+                     </div>
+                     <div class="reviews-clients__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales
+                        finibus sed in dolor.
+                        Etiam iaculis, nibh a lobortis egestas, est urna sodales. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Curabitur eu libero ut erat sodales
+                        finibus sed in dolor.
+                        Etiam iaculis, nibh a lobortis egestas, est urna sodales finibus sed in dolor.
+                     </div>
+                     <div class="reviews-clients__name">ALEXANDR PODVALNY</div>
+                     <div class="reviews-clients__prof">Free-PSD-Template.com Company</div>
+                  </div>
                </div>
-               <div class="reviews-clients__item">
-                  <div class="reviews-clients__icon">
-                     <picture>
-                        <source srcset="img/team3_3.webp" type="image/webp"><img src="img/team3_3.jpg" alt=""></picture>
-                  </div>
-                  <div class="reviews-clients__text">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu libero ut erat sodales
-                     finibus sed in dolor.
-                     Etiam iaculis, nibh a lobortis egestas, est urna sodales. Lorem ipsum dolor sit amet,
-                     consectetur adipiscing elit. Curabitur eu libero ut erat sodales
-                     finibus sed in dolor.
-                     Etiam iaculis, nibh a lobortis egestas, est urna sodales finibus sed in dolor.
-                  </div>
-                  <div class="reviews-clients__name">ALEXANDR PODVALNY</div>
-                  <div class="reviews-clients__prof">Free-PSD-Template.com Company</div>
-               </div>
+               <div class="reviews-clients__pagination"></div>
             </div>
          </div>
       </section>
-      <div class="contact" id="cnt">
-         <div class="contact__map"></div>
+      <div id="contact" class="contact section">
+         <div class="contact__map">
+            <iframe title="Google map"
+               src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15781807.093457233!2d-32.79851280080244!3d35.702668910646906!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1617324287104!5m2!1sru!2sua"
+               allowfullscreen="" loading="lazy"></iframe>
+         </div>
          <div class="contact__bg">
+            <div class="contact__bg-img">
+               <picture>
+                  <img src="img/contact_bgSmall.jpg" alt="" loading="lazy">
+               </picture>
+            </div>
             <div class="container">
                <div class="contact__body">
                   <div class="contact__column">
                      <div class="contact__info info-contact">
                         <div class="info-contact__header">
                            <div class="info-contact__icon">
-                              <picture>
-                                 <source srcset="icons/icon_contact.webp" type="image/webp"><img
-                                    src="icons/icon_contact.png" alt=""></picture>
+                              <img src="img/icons/icon_contact.png" alt="" loading="lazy">
                            </div>
                            <div class="info-contact__title">Atlantida</div>
                         </div>
@@ -912,50 +1166,47 @@
                            per
                            conubia nostra.
                         </div>
-                        <div class="info-contact__label">Atlantida studio</div>
-                        <div class="info-contact__address">
-                           <p>Steven Bernson, Attorney at Law</p>
-                           <p>1556 Broadway, suite 416</p>
-                           <p>New York, NY, 10120, USA</p>
-                        </div>
-                        <div class="info-contact__mail">
-                           E-mail:
-                           <a href="mailto:elegantflyers@gmail.com">
-                              elegantflyers@gmail.com
-                           </a>
-                        </div>
-                        <div class="info-contact__phone">
-                           <a href="tel:+84956654972">+84 956 654 972</a>
-                        </div>
-                        <div class="info-contact__social social-contact">
-                           <div class="social-contact__body">
-                              <div class="social-contact__link">
-                                 <a href="">
-                                    <picture>
-                                       <source srcset="icons/clients_Facebook.webp" type="image/webp"><img
-                                          src="icons/clients_Facebook.png" alt=""></picture>
+                        <div class="info-contact__row">
+                           <div class="info-contact__item">
+                              <div class="info-contact__label">Atlantida studio</div>
+                              <div class="info-contact__address">
+                                 <p>Steven Bernson, Attorney at Law</p>
+                                 <p>1556 Broadway, suite 416</p>
+                                 <p>New York, NY, 10120, USA</p>
+                              </div>
+                           </div>
+                           <div class="info-contact__item">
+                              <div class="info-contact__mail">
+                                 E-mail:
+                                 <a href="mailto:elegantflyers@gmail.com">
+                                    elegantflyers@gmail.com
                                  </a>
                               </div>
-                              <div class="social-contact__link">
-                                 <a href="">
-                                    <picture>
-                                       <source srcset="icons/clients_Tweter.webp" type="image/webp"><img
-                                          src="icons/clients_Tweter.png" alt=""></picture>
-                                 </a>
+                              <div class="info-contact__phone">
+                                 Tel:
+                                 <a href="tel:+84956654972">+84 956 654 972</a>
                               </div>
-                              <div class="social-contact__link">
-                                 <a href="">
-                                    <picture>
-                                       <source srcset="icons/clients_Behance.webp" type="image/webp"><img
-                                          src="icons/clients_Behance.png" alt=""></picture>
-                                 </a>
+                              <div class="info-contact__social social-contact">
+                                 <div class="social-contact__body">
+                                    <div class="social-contact__link">
+                                       <a href="#" class="_icon-facebook social-icon facebook"
+                                          aria-label="facebook"></a>
+                                    </div>
+                                    <div class="social-contact__link">
+                                       <a href="#" class="_icon-twitter social-icon twitter" aria-label="twitter"></a>
+                                    </div>
+                                    <div class="social-contact__link">
+                                       <a href="#" class="_icon-behance social-icon behance" aria-label="behance"></a>
+                                    </div>
+                                 </div>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
                   <div class="contact__column">
-                     <form action="#" data-da="info-contact__text,last,767.98" class="contact__submit submit-contact">
+                     <form method="GET" action="#" data-da="info-contact__text,last,767.98"
+                        class="contact__submit submit-contact">
                         <div class="submit-contact__body">
                            <div class="submit-contact__column">
                               <div class="submit-contact__input">
@@ -970,7 +1221,7 @@
                                  <input type="email" name="mail" placeholder="E-mail*">
                               </div>
                               <div class="submit-contact__input">
-                                 <input type="url" placeholder="Website">
+                                 <input type="url" name="url" placeholder="Website">
                               </div>
                            </div>
                            <div class="submit-contact__textarea">
@@ -992,6 +1243,7 @@
          </div>
       </div>
    </div>
+
    <script src="js/vendors.min.js"></script>
    <script src="js/script.min.js"></script>
 </body>
