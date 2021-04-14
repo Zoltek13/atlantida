@@ -1,0 +1,14 @@
+{
+   "name": "Atlantida",
+   "short_name": "Atlantida",
+   "icons": [
+      {
+         "src": "img/Favicon/android-chrome-144x144.png",
+         "sizes": "144x144",
+         "type": "image/png"
+      }
+   ],
+   "theme_color": "#ffffff",
+   "background_color": "#ffffff",
+   "display": "standalone"
+}
