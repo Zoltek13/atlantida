@@ -727,6 +727,12 @@ body._lock {
   }
 }
 
+@media (max-width: 500px) {
+  .nav__list {
+    margin-bottom: 30px;
+  }
+}
+
 .nav__link {
   font-size: 12px;
   color: #4b4b4b;
