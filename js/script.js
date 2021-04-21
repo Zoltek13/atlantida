@@ -214,6 +214,16 @@ for (let i = 0; i < portfolio_btn.length; i++) {
    });
 }
 
+//========================= Textarea =========================
+
+const textarea = document.querySelector('textarea');
+
+textarea.addEventListener('keyup', function () {
+   if (this.scrollTop > 0) {
+      this.style.height = this.scrollHeight + 5 + "px";
+   }
+});
+
 
 
 
